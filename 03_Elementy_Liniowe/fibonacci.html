@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title> Fibonacci - cwiczenie </title>
+</head>
+<body>
+ 
+<p> <b>Ciąg Fibonacciego</b> to ciąg liczb naturalnych określony rekurencyjnie </p>
+<p><code> F(n) = F<sub>n-1</sub> + F<sub>n-2</sub> dla n>0 </code></p>
+
+<ol><li style=list-style-type:square;> <b><var>F</var><sub>0</b></sub> = 0 </li>
+<li style=list-style-type:square;> <b><var>F</var><sub>1</b></sub> = 1</li>
+<li style=list-style-type:square;> <b><var>F</var><sub>2</b></sub> = 2 </li>
+<li style=list-style-type:square;> <b><var>F</var><sub>3</b></sub> = 2 </li>
+<li style=list-style-type:square;> <b><var>F</var><sub>4</b></sub> = 3 </li>
+<li style=list-style-type:square;> <b><var>F</var><sub>5</b></sub> = 5 </li>
+<li style=list-style-type:square;> <b><var>F</var><sub>6</b></sub> = 8 </li>
+<li style=list-style-type:square;> <b><var>F</var><sub>7</b></sub> = 13 </li>
+<li style=list-style-type:square;> <b><var>F</var><sub>8</b></sub> = 21 </li>
+<li style=list-style-type:square;> <b><var>F</var><sub>9</b></sub> = 34 </li></ol>
+
+<pre>
+ Fibonacci ( n )
+ if n=0 then return 0
+ if n=1 then return 1
+ f' ← 0
+ f ← 1
+ for i ← 2 to n
+  do
+   m ← f + f'
+   f' ← f
+   f ← m
+  end
+ return f
+</pre>
+ 
+ 
+<p><a href="https://pl.wikipedia.org/wiki/Fibonacci">Życiorys Fibonacciego</a>
+
+<p> Ciąg Fibonacciego w <s>biologii</s>, <mark>literaturze</mark> i <q>muzyce</q>.</p>
+
+
+</body>
+</html>
