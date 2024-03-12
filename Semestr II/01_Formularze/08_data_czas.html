@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8" />
+ <title>Czas</title>
+</head>
+
+
+<body>
+<form action="submited.html">
+	<fieldset>
+	<legend>Data i czas</legend>
+	<b>Data: </b><label for="datemin">Wprowadź datę po 01-01-2000</label>
+	<input id="datemin"  name="datemin" min="2000-01-02" type="date"> czyli minimalna data to 2 stycznia 2000 roku<br><br>
+	
+	<b>Data: </b><label for="datemax">Wprowadź datę przed 01-01-2000</label>
+	<input id="datemax" name="datemax" max="1999-12-31" type="date"> czyli maksymalna data to 31 grudnia 1999 roku<br><br>
+	
+	<b>Godzina lokalna: </b><label for="datetime">Wprowadź datę i godzinę: </label>
+	<input id="datatime" name="datatime" type="datatime-local"><br><br>
+	
+	<b>Miesiąc: </b><label for="monthyear">Podaj miesiąc i rok: </label>
+	<input id="monthyear" name="monthyear" type="month"><br><br>
+	
+	<b>Week: </b><label for="week">Wybierz tydzień: </label>
+	<input id="week" name="week" type="week"><br><br>
+	
+	<b>Godzina: </b><label for="time">Podaj godzinę: </label>
+	<input id="time" name="time" type="time">
+	
+
+	</select><br><br> 
+		
+		
+	<input type="submit" value="Wyślij">
+	</fieldset>
+</form>
+</body>
+
+
+</html>
