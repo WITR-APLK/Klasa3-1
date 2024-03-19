@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8" />
+ <title>Rejestracja dziecka</title>
+ 
+ <style>
+	* {
+	font-family: Calibri;
+	}
+	
+	textarea {
+	}
+	
+	table {
+		border-collapse: collapse;
+		table-layout: fixed;
+		width: 100%;
+		padding: 10px;
+	}
+	
+	td {
+		border: 2px solid black;
+		padding: 10px;
+		border: 1px solid lightgray;
+	}
+	
+	input#send {
+		margin: 0 auto;
+	}
+	
+	input#send:hover {
+		background-color: aliceblue;
+		border-color: steelblue;
+		padding: 5px;
+	}
+	
+ </style>
+</head>
+
+
+<body>
+<form action="submited.html">
+	
+<table>
+	<tr>
+		<td style="text-align:right">Imię:<span style="color:red">*</span></td>
+		<td style="text-align:center">
+		<textarea rows="1" required></textarea>
+		</td>
+		<td style="text-align:right">Nazwisko:<span style="color:red">*</td>
+		<td style="text-align:center">
+		<textarea rows="1" required></textarea>
+		</td>
+		<td style="text-align:right">Miejscowość urodzenia:<span style="color:red">*</td>
+		<td style="text-align:center">
+		<textarea rows="1" required></textarea>
+		</td>
+	</tr>
+	<tr>
+		<td style="text-align:right">Drugie imię:</td>
+		<td style="text-align:center">
+		<textarea rows="1"></textarea>
+		</td>
+		<td style="text-align:right">Data urodzenia:<span style="color:red">*</td>
+		<td style="text-align:center">
+		<input id="monthyear" name="monthyear" type="month">
+		</td>
+		<td style="text-align:right">Województwo urodzenia:<span style="color:red">*</td>
+		<td style="text-align:center">
+		<select id="cars1" name="cars1">
+			<option></option>
+			<option>Dolnośląskie</option>
+			<option>Kujawsko-pomorskie</option>
+			<option>Lubelskie</option>
+			<option>Lubuskie</option>
+			<option>Łódzkie</option>
+			<option>Małopolskie</option>
+			<option>Mazowieckie</option>
+			<option>Opolskie</option>
+			<option>Podkarpackie</option>
+			<option>Podlaskie</option>
+			<option>Pomorskie</option>
+			<option>Śląskie</option>
+			<option>Świętokrzyskie</option>
+			<option>Warmińsko-Mazurskie</option>
+			<option>Wielkopolskie</option>
+			<option>Zachodniopomorskie</option>
+	</select>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="6" style="text-align:center">
+		<input id="send" type="submit" value="Wyślij">
+		</td>
+</table>
+	
+</form>
+</body>
+
+
+</html>
