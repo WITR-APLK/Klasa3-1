@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8" />
+ <title>Zasięg</title>
+ 
+<style>
+</style>
+</head>
+
+
+<body>
+<form action="submited.html">
+	<fieldset>
+	<legend>Zasięg</legend>
+	
+	<label for="suwak"><br>Wybierz rok urodzenia: </label>
+	<input id="suwak" name="suwak" type="range" min="1900" max="2024"
+			oninput="this.nextElementSibling.value = this.value"
+			value="2006" type="range">
+	<output>2006</output><br><br>
+	
+	<br><input name="guzik" type="submit" value="Wyślij">
+	</fieldset>
+</form>
+</body>
+
+
+</html>

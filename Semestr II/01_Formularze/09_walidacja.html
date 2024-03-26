@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8" />
+ <title>Walidacja</title>
+ 
+<style>
+</style>
+</head>
+
+
+<body>
+<form action="submited.html">
+	<fieldset>
+	<legend>Prosta walidacja po stronie klienta</legend>
+	
+	<label for="tel"><b>tel:</b>Podaj numer telefonu: </label>
+	<input id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789" type="text"><br><br>
+	
+	<label for="numb"><b>liczba:</b> Podaj liczbę pomiędzy -50 a 0 </label>
+	<input id="numb" name="numb" type="number" min="-50" max="0" step="5"><br><br>
+	
+	<label for="url"><b>url:</b> Podaj adres URL: </label>
+	<input required id="url" name="url" type="text" required type="url"><br><br>
+		
+	<label for="email"><b>email:</b> Podaj adres E-mail: </label>
+	<input required id="email" name="email" type="text" required type="email"><br>
+	
+	<br><input name="guzik" type="submit" value="Wyślij">
+	</fieldset>
+</form>
+</body>
+
+
+</html>
