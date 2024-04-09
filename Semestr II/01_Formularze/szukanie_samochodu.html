@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8" />
+ <title>Szukanie samochodu</title>
+ 
+<style>
+	table {
+		width: 100%;
+		border-collapse: collapse;
+	}
+	
+	td {
+		border-left: 3px solid blueviolet;
+		padding: 10px 20px 10px 20px;	
+	}
+	
+</style>
+</head>
+
+
+<body>
+<form action="submited.html">
+
+<table>
+	<tr>
+		<td><label for="marka">Marka:<span style="color:red">*</span>
+		<input for="marka" id="marka" type="text" required></td>
+		<td rowspan="2"><label for="typ">Typ nadwiozia:<span style="color:red">*</span></label>
+		<select for="typ" size="5" id="typ" required>
+				<option value="Sedan">Sedan</option>
+				<option value="Kombi">Kombi</option>
+				<option value="Kabriolet">Kabriolet</option>
+				<option value="Hatchback">Hatchback</option>
+				<option value="Coupe">Coupe</option>
+		</select>
+		</td>
+		<td><label for="data">Miesiąc i rok produkcji:
+		<input id="data" name="data" type="month"></td>
+		<td><label for="range">Przebieg:
+		<input id="suwak" name="suwak" type="range" min="25000" max="250000" step="25000"
+			oninput="this.nextElementSibling.value = this.value"
+			value="25000" type="range">
+	<output>25000</output><br><br>
+		<td rowspan="2"><input name="guzik" type="submit" value="Szukaj"></td>
+	</tr>
+	<tr>
+		<td><label for="model">Model:
+		<input for="model" id="model" type="text"></td>
+		<td><label for="fuel">Rodzaj paliwa:
+		<select for="fuel" id="fuel">
+			<option value="benzyna">Benzyna</option>
+			<option value="1">inne paliwo</option>
+			<option value="2">paliwo #2</option>
+		</select></td>
+		<td><label for="price">Cena do:
+		<input id="suwak2" name="suwak2" type="range" min="2000" max="500000" step="1000"
+			oninput="this.nextElementSibling.value = this.value"
+			value="2000" type="range">
+	<output>2000</output><br><br>
+		
+
+</form>
+
+
+</body>
+</html>
